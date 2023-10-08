@@ -30,7 +30,7 @@ Users should be able to:
 
 
 ### Links
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://tip-calculator-bizp.vercel.app/)
 
 ## My process
 
@@ -76,6 +76,6 @@ I want to foucs more on building platforms for mobile devices and native desktop
 
 ## Author
 
-- Website - [Afuh Flynn's Tembeng](https://www.your-site.com)
+- Website - [Afuh Flynn's Tembeng](https://tip-calculator-bizp.vercel.app/)
 - Frontend Mentor - [@AfuhFlynns](https://www.frontendmentor.io/profile/AfuhFlynns)
 - Twitter - [@afuhFlynn_s](https://www.twitter.com/afuhFlynns_s)

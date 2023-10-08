@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media screen and (max-width:1440px) {
+    body{
+        font-family:monospace;
+        font-weight:  700;
+        font-size: 24px;
+    }
+    #container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 11px;
+        text-align: center;
+        height: 100vh;
+        background-color: rgb(197, 224, 240);
+    }
+    #Contents{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items:center;
+        justify-content: space-between;
+        background-color: white;
+        padding: 1.3rem;
+        border-radius: 10px;
+        width: 16.5cm;
+        height: 8.4cm;
+        gap:0.8rem;
+    }
+    #entrySection{
+        display: flex;
+        flex-direction: row;
+        flex-direction:column;
+    }
+    #Bill{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        flex-direction: column;
+        justify-content:left;
+        align-items:self-start;
+        padding: 0 0 1.5rem 0;
+    }
+    .billInputarea{
+        display: flex;
+        align-items: center;
+        background-color: hsl(180, 16%, 89%);
+        padding: 0.4rem 0.7rem;
+        border-radius: 5px;
+        opacity: 0.5;
+        font-size: large;
+        flex-direction: row;
+        gap: 6px;
+    }
+    #billInput{
+        direction: rtl;
+        padding: 0.4rem 0.7rem;
+        border-radius: 5px;
+        border: none;
+        font-family: monospace;
+        font-weight: bold;
+        font-size: larger;
+        color: black;
+        opacity: 1;
+        font-weight: bolder;
+        background-color: hsl(180, 16%, 89%);
+    }
+    #inputLabels{
+        font-weight: bold;
+        opacity: 0.7;
+    }
+    #NumberofPeople{
+        display: flex;
+        flex-direction: column;
+        align-items: self-start;
+        padding: 1.7rem 0 0 0;
+    }
+    #numOfP{
+        direction: rtl;
+        padding: 0.4rem 0.7rem;
+        border-radius: 5px;
+        font-family: monospace;
+        font-weight: bold;
+        font-size: larger;
+        color: black;
+        opacity: 1;
+        font-weight: bolder;
+        background-color: hsl(180, 16%, 89%);
+    }
+    #person{
+        width: 0.4cm;
+        height: 0.4cm;
+    }
+    .numberOfPEntry{
+        display: flex;
+        align-items: center;
+        background-color: hsl(180, 16%, 89%);
+        padding: 0.4rem 0.7rem;
+        border-radius: 5px;
+        opacity: 0.5;
+        font-size: large;
+        flex-direction: row;
+        gap: 6px;
+    }
+    #Error{
+        display:none;
+        color: red;
+    }
+    #numDetails{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 7.5cm;
+    }
+    #inputLabels{
+        font-size: 12px;
+    }
+    .Entrypad{
+        background-color: hsl(183, 100%, 15%);
+        color: white;
+        width: 2cm;
+        height: 0.8cm;
+        border-radius: 5px;
+        font-size: 14px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        direction: rtl;
+    }
+    .Entrypad:hover{
+        cursor: pointer;
+    }
+    #customNumber{
+        background-color: white;
+        color: black;
+        border: none;
+        padding: 0.7rem;
+    }
+    #customNumber::placeholder{
+        font-family: monospace;
+        font-weight: bolder;
+        opacity: 0.9;
+    }
+    #outputSection{
+        background-color: hsl(183, 100%, 15%);
+        width:16cm;
+        height:7cm;
+        color:white;
+        border-radius:10px;
+        padding: 2rem;
+    }
+    #varTips{
+        display: flex;
+        flex-direction: row;
+        gap: 0.7rem;
+    }
+    #Keypad{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items:self-start;
+        gap: 0.7rem;
+    }
+    #tips{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #Outputheading{
+        font-size: 14px;
+        color: rgba(240, 243, 245, 0.9);
+    }
+    #OutputPara{
+        font-size: 11px;
+        color: rgb(217, 227, 233, 0.5);
+    }
+    #outputLabels{
+        display: flex;
+        flex-direction: column;
+        align-items: self-start;
+        padding: 1.5rem 0;
+        gap: 8px;
+    }
+    #calculated_tip{
+        font-size: 32px;
+        color: hsl(172, 67%, 45%);
+    }
+    #Reset{
+        border:none;
+        background-color: hsl(183, 98%, 20%);
+        padding: 0.6rem 5rem;
+        font-size: 12px;
+        font-weight: bold;
+        border-radius: 5px;
+        color: hsl(183, 100%, 15%);
+    }
+    #Reset:hover{
+        cursor: pointer;
+    }
+}
+@media screen and (max-width:375px){
+    #container{
+        flex-direction: column;
+        justify-content: center;
+        align-items:first b;
+        width:100vw;
+        height:100vh;
+        background-color:white;
+    }
+    #Contents{
+        flex-direction: column;
+        padding: 1.3rem;
+        height: 86vh;
+        width:100vw;
+        border-radius:0;
+    }
+    #outputSection{
+        width:90vw;
+        height:7cm;
+        border-radius:25px;
+    }
+    #Reset{
+        width:60vw;
+        height:1.11cm;
+        font-size:medium;
+    }
+    .Entrypad{
+        width: 2.4cm;
+        height: 1.2cm;
+        font-size:15px;
+    }
+}

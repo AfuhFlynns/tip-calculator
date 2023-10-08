@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+    <form id="container">
+        <div id="Contents">
+            <div id="entrySection">
+            <section id="Bill">
+                <p id="inputLabels">Bill</p>
+                <div class="billInputarea"><span id="Dsign">$</span><input type="number" id="billInput" placeholder="0" maxlength="20"/></div>
+            </section>
+            <section id="Keypad">
+                <p id="inputLabels">Select Tip %</p>
+                <div id="varTips">
+                    <p id="numberFive" class="Entrypad" onclick="performCalcs()">5%</p>
+                    <p id="numberTen" class="Entrypad" onclick="performCalcs()">10%</p>
+                    <p id="numberFifteen" class="Entrypad" onclick="performCalcs()">15%</p>
+                </div>
+                <div id="varTips">
+                    <p id="numberTwentiF" class="Entrypad" onclick="performCalcs()">25%</p>
+                    <p id="numberFifty" class="Entrypad" onclick="performCalcs()">50%</p>
+                    <input id="customNumber" class="Entrypad" placeholder="Custom" oninput="performCalcs()"/>
+                </div>
+            </section>
+            <section id="NumberofPeople">
+                <div id="numDetails">
+                    <p id="inputLabels">Number of People</p><span id="Error">Can't be zero</span>
+                </div>
+                <div class="numberOfPEntry">
+                    <img src="person.jpeg" id="person"><input type="number" id="numOfP" placeholder="0"/>
+                </div>
+            </section>
+        </div>
+        <div id="outputSection">
+            <div id="displayOutput">
+                <div>
+                    <div id="tips">
+                        <div id="outputLabels"><h2 id="Outputheading">Tip Amount</h2>
+                            <p id="OutputPara">/ person</p>
+                        </div>
+                        <h1 id="calculated_tip"><span>&dollar;</span><span id="received_tip"></span></h1>
+                    </div>
+                    <div id="tips">
+                        <div id="outputLabels">
+                            <h2 id="Outputheading">Total</h2>
+                        <p id="OutputPara">/ person</p>
+                        </div>
+                        <h1 id="calculated_tip"><span>&dollar;</span><span id="received_Totaltip"></span></h1>
+                    </div>
+                </div>
+            </div>
+            <div id="Buttonshere">
+                <button type="reset" id="Reset">RESET</button>
+            </div>
+        </div>
+    </div>
+    </form>  
+    <script src="index.js"></script>
+</body>
+</html>
